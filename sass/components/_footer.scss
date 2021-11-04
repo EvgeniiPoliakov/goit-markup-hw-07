@@ -2,7 +2,7 @@
   background-color: #2f303a;
   padding: 60px 0;
   .footer__logocolor {
-    color: #ffffff;
+    color: var(--basic-color);
   }
 }
 .footer__link,
@@ -21,7 +21,7 @@
   }
 }
 .footer__map {
-  color: #ffffff;
+  color: var(--basic-color);
 }
 .footer__tittle {
   color: rgba(255, 255, 255, 1);
@@ -51,7 +51,7 @@
 .footer__social-socials {
   margin-top: 20px;
   .social-icon {
-    fill: #ffffff;
+    fill: var(--basic-color);
   }
 }
 .footer__socials-list {
@@ -97,15 +97,16 @@
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .footer__sign-input {
-    color: #ffffff;
+    color: var(--basic-color);
     &:focus {
-      border-color: #ffffff;
+      border-color: var(--basic-color);
       outline: none;
     }
     &:focus::placeholder {
-      color: #ffffff;
+      color: var(--basic-color);
     }
     &::placeholder {
       font-size: 16px;
